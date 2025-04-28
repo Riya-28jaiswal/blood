@@ -1,0 +1,87 @@
+{% extends 'generalmaster.html' %}
+{% block contentarea %}
+    <div class="row">
+    <div class="col-sm-12" style="border:2px solid pink;height:200px;background-color:red;">
+
+    </div>
+    </div>
+<div class="container">
+    <div class="row">
+        <center><h1 style="color:black;">Donor Registration</h1></center>
+        <hr style="height:2px; background-color:darkred;">
+        <div class="col-sm-12">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8"style="border:2px solid darkred;margin-top:20px;"><br/>
+                <div class="col-sm-6">
+                    Name:
+                    <input type="text" class="form-control" name="txtname" required /><br/>
+                    Father name:
+                    <input type="text" class="form-control" name="name" required/><br/>
+                    Gender:
+                    <input type="radio"name="a"/>Male
+                    <input type="radio"name="b"/>Female
+                    <br/><br/>
+                    Date of Birth:
+                    <input type="date" class="form-control" name="date" required /><br/>
+                    Blood Group:
+                    <select class="form-control">
+                        <option>Choose Blood Group</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                     </select><br/>
+                    <br/>
+                    Weight:
+                    <input type="text" class="form-control" name="text" required />
+                <br/>
+                    Password:
+                    <input type="password"class="form-control" name="pass" required/><br/>
+
+                <br/>
+                </div>
+                <div class="col-sm-6">
+
+
+                Mobile No:
+                <input type="number" class="form-control" name="number" required/><br/>
+                       City:
+                    <select class="form-control">
+                        <option>Choose City Name</option>
+                        <option>Delhi</option>
+                        <option>Lucknow</option>
+                        <option>Mumbai</option>
+                        <option>Gorakhpur</option>
+                        <option>Kanpur</option>
+                        <option>Hydrabad</option>
+                        <option>Noida</option>
+                        <option>Meerut</option>
+                     </select><br/>
+                    <br/>
+                     E-mail:
+                    <input type="text" class="form-control" name="email" required /><br/>
+
+                    Address:
+                    <input type="text" class="form-control" name="text" required />
+                <br/>
+                    Pincode No:
+                    <input type="number" class="form-control" name="number" required /><br/>
+                    Confirm Password:
+                    <input type="password" class="form-control" name="cpass" required/><br/>
+
+                     <input type="submit" class="form-control btn btn-success" value="Register now">
+                 </div><br/>
+            </div>
+            <div class="col-sm-2"></div>
+
+
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+{% endblock %}

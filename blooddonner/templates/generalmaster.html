@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BloodDonation</title>
+    {% load static %}
+     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/hover-min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/GeneralZone.css' %}" rel="stylesheet">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div class="container">
+   <div class="row">
+    {% block contentarea %}
+    {% endblock %}
+   </div>
+</div>
+</body>
+</html>
